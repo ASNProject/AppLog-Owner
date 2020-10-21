@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Dashboard">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+
+    <TextView
+        android:id="@+id/teks9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hallo, "
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/idpengguna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/teks9"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/teks9"
+        android:layout_toRightOf="@+id/teks9"
+        android:text="Username"
+        android:textSize="20dp"
+        android:textStyle="bold"></TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idpengguna"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#37A9FF">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selamat datang di Aplikasi Monitoring Tambak Udang. Silahkan pilih List untuk melihat data yang sudah diinputkan pegawai. Data akan ditampilkan secara Realtime berdasarkan hasil update data dari pegawai."
+            android:textAlignment="center"
+            android:layout_margin="10dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"
+            android:gravity="center_horizontal"></TextView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/teks10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Daftar Petani"
+        android:layout_below="@+id/card2"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        ></TextView>
+
+    <ImageView
+        android:id="@+id/baseline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_baseline_more_vert_24"></ImageView>
+
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@id/teks10"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toStartOf="@+id/baseline1"
+        android:layout_toLeftOf="@+id/baseline1"
+        android:background="@drawable/search"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
+        android:paddingLeft="5dp"></EditText>
+
+    <TextView
+        android:id="@+id/tombolsearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/search"
+        android:layout_alignBottom="@+id/search"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="0dp"
+        android:text="Cari"
+        android:textSize="16dp"
+        android:textColor="#37A9FF"
+        android:gravity="center_vertical"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/datapetani"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tombolsearch"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>

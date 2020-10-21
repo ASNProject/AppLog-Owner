@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tollbar"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/asd"></androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/teksr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:text="The Future"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"/>
+    <TextView
+        android:id="@+id/teksr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="112dp"
+        android:text="Of The Pond"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/teksr1"/>
+    <TextView
+        android:id="@+id/teksr3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="112dp"
+        android:text="Aplikasi Monitoring dan Aplikasi Tambak"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/teksr2"/>
+
+    <TextView
+        android:id="@+id/teksr4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teksr3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:text="REGISTER"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/teksr5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teksr4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Username"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/usernameregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teksr5"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="40dp"
+        ></EditText>
+
+    <TextView
+        android:id="@+id/teksr6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameregister"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:text="Email"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/emailregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teksr6"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="6dp"
+        ></EditText>
+    <TextView
+        android:id="@+id/teksr7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailregister"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:text="Password"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/passwordregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teksr7"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="6dp"
+        ></EditText>
+    <TextView
+        android:id="@+id/teksr8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordregister"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:text="No. Telephone"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/notelfon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teksr8"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="6dp"
+        ></EditText>
+    <Button
+        android:id="@+id/butonregister"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/notelfon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/buttonshape"
+        android:text="Daftar"></Button>
+    <TextView
+        android:id="@+id/teksr9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudah Punya Akun ?"
+        android:textStyle="bold"
+        android:layout_below="@id/butonregister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"></TextView>
+
+    <TextView
+        android:id="@+id/teksr10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teksr9"
+        android:layout_marginTop="5dp"
+        android:text="Login"
+        android:textColor="#4E17AF"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"></TextView>
+
+
+
+
+</RelativeLayout>

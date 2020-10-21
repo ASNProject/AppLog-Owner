@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tollbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/asd"></androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:id="@+id/teks1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:text="The Future"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"/>
+    <TextView
+        android:id="@+id/teks2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="112dp"
+        android:text="Of The Pond"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/teks1"/>
+    <TextView
+        android:id="@+id/teks3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="120dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="112dp"
+        android:text="Aplikasi Monitoring dan Aplikasi Tambak"
+        android:textSize="12dp"
+        android:textStyle="italic"
+        android:layout_marginTop="0dp"
+        android:layout_below="@id/teks2"/>
+
+    <TextView
+        android:id="@+id/teks4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:text="LOGIN"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/teks5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks4"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Username"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/emaillogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks5"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="40dp"
+></EditText>
+
+    <TextView
+        android:id="@+id/teks6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emaillogin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Pasword"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/paswordlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks6"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="6dp"
+        ></EditText>
+
+    <CheckBox
+        android:id="@+id/cekbok"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:layout_below="@+id/paswordlogin"
+        android:layout_alignStart="@+id/paswordlogin"
+        android:layout_alignLeft="@+id/paswordlogin"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="90dp" />
+
+    <TextView
+        android:id="@+id/teks7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/cekbok"
+        android:layout_alignEnd="@+id/paswordlogin"
+        android:layout_alignRight="@+id/paswordlogin"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_toEndOf="@+id/cekbok"
+        android:layout_toRightOf="@+id/cekbok"
+        android:text="simpan username dan pasword"
+        android:textSize="12dp"
+        android:textStyle="italic"></TextView>
+
+    <Button
+        android:id="@+id/butonmasuk"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/teks7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginRight="80dp"
+        android:background="@drawable/buttonshape"
+        android:text="Masuk"></Button>
+    <TextView
+        android:id="@+id/teks8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Belum Punya Akun ?"
+        android:textStyle="bold"
+        android:layout_below="@id/butonmasuk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"></TextView>
+
+    <TextView
+        android:id="@+id/daftar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teks8"
+        android:layout_marginTop="5dp"
+        android:text="Daftar"
+        android:textColor="#4E17AF"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"></TextView>
+
+
+</RelativeLayout>
